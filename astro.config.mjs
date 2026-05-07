@@ -162,23 +162,23 @@ export default defineConfig({
           collapsed: true,
           items: [
             {
-              label: 'Trial 01 - Calculadora de Eorzea',
+              label: 'Trial 01 · Calculadora de Eorzea',
               slug: '3-projetos/01-calculadora-cli',
             },
             {
-              label: 'Trial 02 - Lista de Recados',
+              label: 'Trial 02 · Echo Journal',
               slug: '3-projetos/02-todo-list',
             },
             {
-              label: 'Trial 03 - Biblioteca de Sharlayan',
+              label: 'Trial 03 · Biblioteca de Sharlayan',
               slug: '3-projetos/03-biblioteca-oop',
             },
             {
-              label: 'Trial 04 - Echo de Dados',
+              label: 'Trial 04 · Hunt Train Tracker',
               slug: '3-projetos/04-scraper-analise',
             },
             {
-              label: 'Trial 05 - API do Aventureiro',
+              label: 'Trial 05 · API do Aventureiro',
               slug: '3-projetos/05-api-fastapi',
             },
           ],
@@ -188,31 +188,31 @@ export default defineConfig({
           collapsed: true,
           items: [
             {
-              label: 'Perfil GitHub',
+              label: 'Perfil GitHub · Lodestone',
               slug: '4-rumo-ao-estagio/perfil-github',
             },
             {
-              label: 'README de portfólio',
+              label: 'README de portfólio · Trophy room',
               slug: '4-rumo-ao-estagio/readme-portfolio',
             },
             {
-              label: 'Currículo júnior',
+              label: "Currículo júnior · Adventurer's resume",
               slug: '4-rumo-ao-estagio/curriculo-junior',
             },
             {
-              label: 'LinkedIn técnico',
+              label: 'LinkedIn técnico · Free Company hub',
               slug: '4-rumo-ao-estagio/linkedin-tecnico',
             },
             {
-              label: 'Onde procurar vagas',
+              label: 'Onde procurar vagas · Recruitment board',
               slug: '4-rumo-ao-estagio/onde-procurar-vagas',
             },
             {
-              label: 'Entrevista técnica',
+              label: 'Entrevista técnica · O pull final',
               slug: '4-rumo-ao-estagio/entrevista-tecnica',
             },
             {
-              label: 'Comportamental',
+              label: 'Comportamental · Post-fight loot',
               slug: '4-rumo-ao-estagio/comportamental',
             },
           ],
