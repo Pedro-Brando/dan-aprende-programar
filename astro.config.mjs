@@ -129,30 +129,39 @@ export default defineConfig({
           collapsed: true,
           items: [
             {
-              label: 'pip e ambientes virtuais',
+              label: 'pip e venv · Materia melding',
               slug: '2-python-pratico/pip-venv',
             },
             {
-              label: 'Classes e objetos',
+              label: 'Classes e objetos · Job blueprint',
               slug: '2-python-pratico/classes-objetos',
             },
-            { label: 'Herança', slug: '2-python-pratico/heranca' },
             {
-              label: 'APIs com requests',
+              label: 'Herança · Class to Job',
+              slug: '2-python-pratico/heranca',
+            },
+            {
+              label: 'APIs com requests · Linkshell call',
               slug: '2-python-pratico/apis-com-requests',
             },
-            { label: 'JSON', slug: '2-python-pratico/json' },
             {
-              label: 'Web scraping',
+              label: 'JSON · Tomestone format',
+              slug: '2-python-pratico/json',
+            },
+            {
+              label: 'Web scraping · Echo of the past',
               slug: '2-python-pratico/web-scraping',
             },
             {
-              label: 'Pandas básico',
+              label: 'Pandas básico · Damage parser',
               slug: '2-python-pratico/pandas-basico',
             },
-            { label: 'SQLite', slug: '2-python-pratico/sqlite' },
             {
-              label: 'Testes com pytest',
+              label: 'SQLite · Saddlebag',
+              slug: '2-python-pratico/sqlite',
+            },
+            {
+              label: 'Testes com pytest · Striking Dummy',
               slug: '2-python-pratico/testes-pytest',
             },
           ],
