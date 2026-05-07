@@ -43,7 +43,7 @@ A diferença é literalmente toda nos sete dias da semana.
 
 :::tip[Dica de raid]
 Se você sentir que um capítulo está fácil, faça os exercícios mesmo assim.
-Quem pula mecânica simples na ARR morre tomando hit básico em Stormblood.
+Quem pula mecânica simples na ARR morre pra stack spread em Stormblood.
 :::
 
 ## Como ler cada capítulo

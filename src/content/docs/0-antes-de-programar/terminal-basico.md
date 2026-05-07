@@ -7,7 +7,7 @@ Você atravessou o portal e chegou no Primeiro. Aqui o céu não é azul: é uma
 camada uniforme de luz cega que impede o tempo de passar. O **terminal** é
 parecido. Tela preta, cursor piscando, nenhuma decoração. Para quem nunca usou,
 parece intimidador. Mas é onde o trabalho real acontece, e dominar o terminal
-é o que separa um aventureiro de quem ainda depende de NPCs com botões.
+separa um hexa legend de um casual que só faz normal raids.
 
 ## O que é um terminal
 

@@ -3,11 +3,11 @@ title: Git e GitHub · Endwalker
 description: Criar conta no GitHub, instalar Git no Windows, configurar nome e email, fazer o primeiro commit e push, e ver seu código publicado online.
 ---
 
-Este é o último capítulo do Tomo 0. O fim do Endwalker, o ponto onde o
-aventureiro deixa de ser anônimo e a sua presença passa a ser registrada
-em Eorzea. **Git** e **GitHub** são as ferramentas que tornam seu código
-visível, versionado e compartilhável. Toda vaga de estágio em programação
-hoje espera que você saiba usar os dois. Não tem como pular.
+O fim de Endwalker, o ponto onde sua jornada se conclui e você começa seu
+endgame (vamos fingir que dawntrail não existe por favor). **Git** e
+**GitHub** são as ferramentas que tornam seu código visível, versionado e
+compartilhável. Toda vaga de estágio em programação hoje espera que você
+saiba usar os dois. Não tem como pular.
 
 ## Git e GitHub não são a mesma coisa
 

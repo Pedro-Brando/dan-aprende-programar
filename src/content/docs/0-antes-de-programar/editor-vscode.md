@@ -63,7 +63,7 @@ Pronto. Agora o VS Code entende Python.
 :::tip[Tema de Eorzea]
 VS Code vem com o tema escuro padrão, que é ótimo. Se quiser brincar, aperte
 **Ctrl + K** seguido de **Ctrl + T** e escolha outro. Eu recomendo "Dark+" ou
-"GitHub Dark" para começar. Tema é gosto pessoal.
+"GitHub Dark" para começar. Tema é gosto pessoal, igual as keybinds da sua rotation.
 :::
 
 ## Primeiro arquivo `.py`
