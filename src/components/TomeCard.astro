@@ -1,0 +1,31 @@
+---
+/**
+ * TomeCard — cartão de "tomo" colorido por cristal.
+ * Usado na landing para sugerir trilhas iniciais.
+ */
+interface Props {
+  href: string;
+  eyebrow: string;
+  title: string;
+  cta?: string;
+  /** Cor do "cristal" deste tomo (CSS color). Default: aether. */
+  crystal?: string;
+}
+
+const {
+  href,
+  eyebrow,
+  title,
+  cta = 'Empunhar este tomo',
+  crystal = 'var(--ff-aether)',
+} = Astro.props;
+---
+
+<a class="tome-card not-content" href={href} style={`--crystal: ${crystal};`}>
+  <span class="tome-card__eyebrow">{eyebrow}</span>
+  <h3 class="tome-card__title">{title}</h3>
+  <p class="tome-card__body">
+    <slot />
+  </p>
+  <span class="tome-card__cta">{cta}</span>
+</a>

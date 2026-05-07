@@ -1,0 +1,31 @@
+---
+/**
+ * TomeHero — hero customizado para a landing/index.
+ * Não substitui o Hero do Starlight (que tem outras semânticas);
+ * é usado diretamente em MDX.
+ */
+import AetherCrystal from './AetherCrystal.astro';
+
+interface Props {
+  eyebrow?: string;
+  title: string;
+  subtitle: string;
+  crystalColor?: string;
+}
+
+const {
+  eyebrow = 'Tomo de Sharlayan · Edição do Aventureiro',
+  title,
+  subtitle,
+  crystalColor = 'var(--ff-aether)',
+} = Astro.props;
+---
+
+<header class="tome-hero not-content">
+  <div class="tome-hero__crystal">
+    <AetherCrystal size="8.5rem" color={crystalColor} label="Cristal de abertura do tomo" />
+  </div>
+  <p class="tome-hero__eyebrow">{eyebrow}</p>
+  <h1 class="tome-hero__title">{title}</h1>
+  <p class="tome-hero__subtitle">{subtitle}</p>
+</header>

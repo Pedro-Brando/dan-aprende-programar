@@ -1,0 +1,881 @@
+/* =====================================================================
+ * Tomo de Sharlayan — folha de estilos aetherial
+ * ---------------------------------------------------------------------
+ * Identidade visual high fantasy com referências a Final Fantasy XIV.
+ * Sobrescreve as variáveis do Starlight e adiciona ornamentos próprios.
+ * ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Unicase:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+/* =========================
+ *  Paleta — Reino Aetherial
+ * ========================= */
+:root {
+  /* Fundos */
+  --ff-void: #0E0B1A;
+  --ff-night: #14101F;
+  --ff-night-2: #1A1530;
+  --ff-night-3: #221B3A;
+
+  /* Pergaminho / texto */
+  --ff-parchment: #F2E4C9;
+  --ff-parchment-dim: #C9BBA0;
+  --ff-parchment-mute: #8E8773;
+
+  /* Cristais */
+  --ff-aether: #7DD3F8;        /* azul cristal aetherial */
+  --ff-aether-deep: #3B7FA8;
+  --ff-aether-low: #142840;
+  --ff-gold: #D4A857;          /* folha de ouro de Sharlayan */
+  --ff-gold-dim: #8C6F35;
+  --ff-violet: #8B6FB8;        /* cristal escuro */
+  --ff-rose: #C8869C;          /* cristal de cura */
+  --ff-blood: #B23B3B;         /* vermelho de Garlemald */
+
+  /* Glow */
+  --ff-glow-aether: 0 0 24px rgba(125, 211, 248, 0.35);
+  --ff-glow-gold: 0 0 18px rgba(212, 168, 87, 0.35);
+  --ff-glow-soft: 0 0 8px rgba(125, 211, 248, 0.18);
+
+  /* Tipografia */
+  --ff-font-display: 'Cinzel', 'Cinzel Decorative', 'Trajan Pro', serif;
+  --ff-font-decor: 'Cormorant Unicase', 'Cinzel Decorative', serif;
+  --ff-font-body: 'EB Garamond', 'Iowan Old Style', 'Sitka Text', Georgia, serif;
+  --ff-font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+}
+
+/* =========================
+ *  Tema escuro (padrão)
+ * ========================= */
+:root,
+:root[data-theme='dark'] {
+  --sl-color-accent-low: var(--ff-aether-low);
+  --sl-color-accent: var(--ff-aether);
+  --sl-color-accent-high: var(--ff-gold);
+
+  --sl-color-white: #FFF6E0;
+  --sl-color-gray-1: var(--ff-parchment);
+  --sl-color-gray-2: var(--ff-parchment-dim);
+  --sl-color-gray-3: var(--ff-parchment-mute);
+  --sl-color-gray-4: #4A4256;
+  --sl-color-gray-5: #2C2540;
+  --sl-color-gray-6: var(--ff-night-2);
+  --sl-color-gray-7: var(--ff-night);
+
+  --sl-color-black: var(--ff-void);
+  --sl-color-bg: var(--ff-void);
+  --sl-color-bg-nav: rgba(20, 16, 31, 0.85);
+  --sl-color-bg-sidebar: var(--ff-night);
+  --sl-color-bg-inline-code: rgba(125, 211, 248, 0.08);
+  --sl-color-hairline: rgba(212, 168, 87, 0.18);
+  --sl-color-hairline-shade: rgba(212, 168, 87, 0.28);
+  --sl-color-hairline-light: rgba(125, 211, 248, 0.18);
+
+  --sl-color-text: var(--ff-parchment);
+  --sl-color-text-accent: var(--ff-aether);
+  --sl-color-text-invert: var(--ff-void);
+
+  --sl-shadow-md: 0 4px 14px rgba(0, 0, 0, 0.55), var(--ff-glow-soft);
+  --sl-shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.65), var(--ff-glow-aether);
+}
+
+/* =========================
+ *  Tema claro (alternativo)
+ * ========================= */
+:root[data-theme='light'] {
+  --sl-color-accent-low: #FCEFCD;
+  --sl-color-accent: #2E5F8F;
+  --sl-color-accent-high: #6B4A12;
+
+  --sl-color-white: #1F1832;
+  --sl-color-gray-1: #2A2438;
+  --sl-color-gray-2: #4A3D5A;
+  --sl-color-gray-3: #6E5F7E;
+  --sl-color-gray-4: #B9A88B;
+  --sl-color-gray-5: #D9C9A8;
+  --sl-color-gray-6: #EFE2C4;
+  --sl-color-gray-7: #F8EFD8;
+
+  --sl-color-black: #FAF1DA;
+  --sl-color-bg: #F8F0DC;
+  --sl-color-bg-nav: rgba(248, 240, 220, 0.92);
+  --sl-color-bg-sidebar: #F2E6C9;
+  --sl-color-bg-inline-code: rgba(46, 95, 143, 0.10);
+  --sl-color-hairline: rgba(107, 74, 18, 0.22);
+  --sl-color-hairline-shade: rgba(107, 74, 18, 0.30);
+  --sl-color-hairline-light: rgba(46, 95, 143, 0.22);
+
+  --sl-color-text: #2A2438;
+  --sl-color-text-accent: #2E5F8F;
+  --sl-color-text-invert: #FAF1DA;
+}
+
+/* =========================
+ *  Tipografia base
+ * ========================= */
+:root {
+  --sl-font: var(--ff-font-body);
+  --sl-font-mono: var(--ff-font-mono);
+  --sl-text-h1: clamp(2.4rem, 4vw + 1rem, 3.8rem);
+  --sl-text-h2: clamp(1.8rem, 2.4vw + 0.8rem, 2.4rem);
+  --sl-text-h3: 1.4rem;
+  --sl-text-h4: 1.15rem;
+  --sl-line-height: 1.7;
+  --sl-line-height-headings: 1.18;
+}
+
+body {
+  font-family: var(--ff-font-body);
+  font-feature-settings: 'liga' 1, 'kern' 1, 'onum' 1;
+  letter-spacing: 0.005em;
+}
+
+h1,
+.sl-markdown-content h1,
+h2,
+.sl-markdown-content h2 {
+  font-family: var(--ff-font-display);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+h1,
+.sl-markdown-content h1 {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: linear-gradient(
+    180deg,
+    var(--ff-parchment) 0%,
+    var(--ff-gold) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 28px rgba(212, 168, 87, 0.18);
+}
+
+:root[data-theme='light'] h1,
+:root[data-theme='light'] .sl-markdown-content h1 {
+  background: linear-gradient(180deg, #2E5F8F 0%, #6B4A12 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+h3,
+.sl-markdown-content h3 {
+  font-family: var(--ff-font-decor);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ff-gold);
+}
+
+:root[data-theme='light'] h3,
+:root[data-theme='light'] .sl-markdown-content h3 {
+  color: #6B4A12;
+}
+
+h4,
+.sl-markdown-content h4 {
+  font-family: var(--ff-font-display);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+}
+
+/* =========================
+ *  Atmosfera (fundo)
+ * ========================= */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(
+      ellipse at 18% -10%,
+      rgba(125, 211, 248, 0.10) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at 92% 8%,
+      rgba(212, 168, 87, 0.08) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 50% 110%,
+      rgba(139, 111, 184, 0.10) 0%,
+      transparent 60%
+    );
+  pointer-events: none;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95  0 0 0 0 0.89  0 0 0 0 0.78  0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+:root[data-theme='light'] body::before {
+  background:
+    radial-gradient(
+      ellipse at 18% -10%,
+      rgba(46, 95, 143, 0.10) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at 92% 8%,
+      rgba(212, 168, 87, 0.18) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 50% 110%,
+      rgba(139, 111, 184, 0.08) 0%,
+      transparent 60%
+    );
+}
+
+:root[data-theme='light'] body::after {
+  opacity: 0.08;
+  mix-blend-mode: multiply;
+}
+
+/* =========================
+ *  Header / Nav
+ * ========================= */
+.header {
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  border-block-end: 1px solid var(--sl-color-hairline);
+  box-shadow: 0 1px 0 rgba(212, 168, 87, 0.08), 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.site-title {
+  font-family: var(--ff-font-display);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.95rem !important;
+}
+
+/* =========================
+ *  Sidebar — cristal ativo
+ * ========================= */
+.sidebar-content {
+  font-family: var(--ff-font-body);
+}
+
+.sidebar-content .group-label > span,
+.sidebar-content summary > .large {
+  font-family: var(--ff-font-display);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--ff-gold);
+}
+
+:root[data-theme='light'] .sidebar-content .group-label > span,
+:root[data-theme='light'] .sidebar-content summary > .large {
+  color: #6B4A12;
+}
+
+.sidebar-content a {
+  font-family: var(--ff-font-body);
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  position: relative;
+  border-radius: 4px;
+  transition: color 220ms ease, background-color 220ms ease, transform 220ms ease;
+}
+
+.sidebar-content a:hover {
+  color: var(--ff-aether);
+  background-color: rgba(125, 211, 248, 0.07);
+}
+
+.sidebar-content a[aria-current='page'] {
+  color: var(--ff-aether);
+  background: linear-gradient(
+    90deg,
+    rgba(125, 211, 248, 0.18) 0%,
+    rgba(125, 211, 248, 0.04) 80%,
+    transparent 100%
+  );
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgba(125, 211, 248, 0.18), var(--ff-glow-soft);
+}
+
+.sidebar-content a[aria-current='page']::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translateY(-50%) rotate(45deg);
+  background: var(--ff-aether);
+  box-shadow: var(--ff-glow-aether);
+  animation: aether-pulse 2.6s ease-in-out infinite;
+}
+
+@keyframes aether-pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 12px rgba(125, 211, 248, 0.55);
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 22px rgba(125, 211, 248, 0.85);
+  }
+}
+
+/* =========================
+ *  Markdown — links e prosa
+ * ========================= */
+.sl-markdown-content {
+  font-size: 1.075rem;
+  line-height: 1.8;
+}
+
+.sl-markdown-content a:not(:where(.not-content *)) {
+  color: var(--ff-aether);
+  text-decoration-color: rgba(125, 211, 248, 0.45);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 200ms ease, text-shadow 200ms ease;
+}
+
+.sl-markdown-content a:not(:where(.not-content *)):hover {
+  color: var(--ff-gold);
+  text-shadow: var(--ff-glow-soft);
+  text-decoration-color: var(--ff-gold);
+}
+
+.sl-markdown-content blockquote:not(:where(.not-content *)) {
+  border-inline-start: 3px solid var(--ff-gold);
+  background: linear-gradient(
+    90deg,
+    rgba(212, 168, 87, 0.06),
+    transparent 80%
+  );
+  font-style: italic;
+  font-family: var(--ff-font-body);
+  padding-block: 0.75rem;
+  padding-inline: 1.25rem;
+  border-radius: 0 6px 6px 0;
+}
+
+.sl-markdown-content hr:not(:where(.not-content *)) {
+  border: none;
+  height: 28px;
+  margin: 3rem auto;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 28' fill='none'><path d='M0 14 H70' stroke='%23D4A857' stroke-width='0.6'/><path d='M130 14 H200' stroke='%23D4A857' stroke-width='0.6'/><circle cx='100' cy='14' r='3.5' fill='none' stroke='%23D4A857' stroke-width='0.8'/><circle cx='100' cy='14' r='1.2' fill='%23D4A857'/><path d='M85 14 L92 8 M85 14 L92 20 M115 14 L108 8 M115 14 L108 20' stroke='%23D4A857' stroke-width='0.6' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px 28px;
+  opacity: 0.7;
+}
+
+/* Listas com marcador customizado */
+.sl-markdown-content ul:not(:where(.not-content *)) > li::marker {
+  color: var(--ff-gold);
+}
+
+/* =========================
+ *  Código
+ * ========================= */
+.sl-markdown-content code:not(:where(.not-content *)):not(pre code) {
+  font-family: var(--ff-font-mono);
+  font-size: 0.92em;
+  padding: 0.15em 0.5em;
+  border-radius: 4px;
+  border: 1px solid rgba(125, 211, 248, 0.15);
+  color: var(--ff-aether);
+  background: var(--sl-color-bg-inline-code);
+  transition: box-shadow 220ms ease;
+}
+
+.sl-markdown-content code:not(:where(.not-content *)):not(pre code):hover {
+  box-shadow: var(--ff-glow-soft);
+}
+
+.expressive-code,
+.sl-markdown-content pre:not(:where(.not-content *)) {
+  border: 1px solid rgba(212, 168, 87, 0.15);
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.25),
+    0 12px 36px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(125, 211, 248, 0.04);
+  border-radius: 8px;
+}
+
+/* =========================
+ *  Asides (callouts) com vibe pergaminho
+ * ========================= */
+.starlight-aside {
+  border-radius: 8px;
+  border-inline-start-width: 3px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    transparent
+  );
+}
+
+.starlight-aside--note {
+  border-inline-start-color: var(--ff-aether);
+}
+.starlight-aside--tip {
+  border-inline-start-color: var(--ff-gold);
+}
+.starlight-aside--caution {
+  border-inline-start-color: var(--ff-violet);
+}
+.starlight-aside--danger {
+  border-inline-start-color: var(--ff-blood);
+}
+
+/* =========================
+ *  Componentes próprios
+ * ========================= */
+
+/* StubScroll — selo "Pergaminho selado" */
+.tome-stub {
+  --stub-bg: linear-gradient(
+    180deg,
+    rgba(212, 168, 87, 0.08),
+    rgba(139, 111, 184, 0.06) 80%
+  );
+  position: relative;
+  margin: 2rem 0;
+  padding: 1.5rem 1.75rem 1.5rem 4rem;
+  border-radius: 6px;
+  border: 1px solid rgba(212, 168, 87, 0.28);
+  background: var(--stub-bg);
+  font-family: var(--ff-font-body);
+  font-size: 1rem;
+  box-shadow:
+    inset 0 0 60px rgba(212, 168, 87, 0.05),
+    0 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+.tome-stub::before {
+  content: '';
+  position: absolute;
+  left: 1.25rem;
+  top: 1.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'><circle cx='16' cy='16' r='13' fill='%23D4A857' fill-opacity='0.12' stroke='%23D4A857' stroke-width='1'/><path d='M16 6 L19 14 L27 14 L20.5 19 L23 27 L16 22 L9 27 L11.5 19 L5 14 L13 14 Z' fill='none' stroke='%23D4A857' stroke-width='1' stroke-linejoin='round'/><circle cx='16' cy='16' r='2' fill='%23D4A857'/></svg>");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.tome-stub__seal {
+  font-family: var(--ff-font-decor);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ff-gold);
+  margin-bottom: 0.35rem;
+}
+
+.tome-stub__title {
+  font-family: var(--ff-font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  color: var(--ff-parchment);
+  margin: 0 0 0.5rem;
+}
+
+.tome-stub__body {
+  color: var(--ff-parchment-dim);
+  margin: 0;
+}
+
+:root[data-theme='light'] .tome-stub__title {
+  color: #2A2438;
+}
+
+:root[data-theme='light'] .tome-stub__body {
+  color: #4A3D5A;
+}
+
+/* TomeCard — cartão de tomo com cor de cristal */
+.tome-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 2.5rem 0 1.5rem;
+  not-content: true;
+}
+
+.tome-card {
+  --crystal: var(--ff-aether);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  position: relative;
+  padding: 1.5rem 1.5rem 1.75rem;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 168, 87, 0.22);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 60%),
+    var(--ff-night);
+  color: var(--ff-parchment);
+  transition: transform 320ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 320ms ease, box-shadow 320ms ease;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.tome-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(
+    ellipse at 20% -10%,
+    color-mix(in srgb, var(--crystal) 30%, transparent) 0%,
+    transparent 55%
+  );
+  opacity: 0.65;
+  transition: opacity 320ms ease;
+}
+
+.tome-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--crystal);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--crystal) 35%, transparent),
+    0 18px 42px rgba(0, 0, 0, 0.45),
+    0 0 28px color-mix(in srgb, var(--crystal) 28%, transparent);
+}
+
+.tome-card:hover::before {
+  opacity: 1;
+}
+
+.tome-card__eyebrow {
+  font-family: var(--ff-font-decor);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--crystal);
+  font-weight: 700;
+}
+
+.tome-card__title {
+  font-family: var(--ff-font-display);
+  font-size: 1.18rem;
+  letter-spacing: 0.04em;
+  color: var(--ff-parchment);
+  margin: 0;
+}
+
+.tome-card__body {
+  font-family: var(--ff-font-body);
+  font-size: 0.98rem;
+  color: var(--ff-parchment-dim);
+  margin: 0;
+}
+
+.tome-card__cta {
+  margin-top: auto;
+  font-family: var(--ff-font-display);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--crystal);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tome-card__cta::after {
+  content: '→';
+  transition: transform 240ms ease;
+}
+
+.tome-card:hover .tome-card__cta::after {
+  transform: translateX(4px);
+}
+
+:root[data-theme='light'] .tome-card {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.4), transparent 60%),
+    #F2E6C9;
+  color: #2A2438;
+  border-color: rgba(107, 74, 18, 0.25);
+}
+
+:root[data-theme='light'] .tome-card__title {
+  color: #1F1832;
+}
+
+:root[data-theme='light'] .tome-card__body {
+  color: #4A3D5A;
+}
+
+/* AetherCrystal — cristal hexagonal animado */
+.aether-crystal {
+  --size: 7rem;
+  --core: var(--ff-aether);
+  width: var(--size);
+  height: var(--size);
+  display: inline-block;
+  position: relative;
+  filter: drop-shadow(0 0 14px color-mix(in srgb, var(--core) 45%, transparent))
+    drop-shadow(0 0 28px color-mix(in srgb, var(--core) 25%, transparent));
+}
+
+.aether-crystal svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.aether-crystal .crystal-shell {
+  transform-origin: center;
+  animation: crystal-rotate 18s linear infinite;
+}
+
+.aether-crystal .crystal-core {
+  transform-origin: center;
+  animation: crystal-pulse 3.4s ease-in-out infinite;
+}
+
+@keyframes crystal-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes crystal-pulse {
+  0%, 100% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+/* Hero "Tomo de abertura" */
+.tome-hero {
+  position: relative;
+  padding: 3.5rem 1.5rem 2.5rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+  border-radius: 14px;
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(125, 211, 248, 0.12) 0%,
+      transparent 60%
+    ),
+    linear-gradient(180deg, var(--ff-night-2), var(--ff-night) 80%);
+  border: 1px solid rgba(212, 168, 87, 0.22);
+  box-shadow:
+    inset 0 0 80px rgba(125, 211, 248, 0.04),
+    0 24px 60px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.tome-hero::before,
+.tome-hero::after {
+  content: '';
+  position: absolute;
+  width: 280px;
+  height: 1px;
+  top: 50%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--ff-gold) 40%,
+    var(--ff-gold) 60%,
+    transparent
+  );
+  opacity: 0.45;
+}
+
+.tome-hero::before {
+  left: -120px;
+  transform: translateY(-50%);
+}
+
+.tome-hero::after {
+  right: -120px;
+  transform: translateY(-50%);
+}
+
+.tome-hero__crystal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.tome-hero__eyebrow {
+  font-family: var(--ff-font-decor);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ff-gold);
+  margin: 0 0 1rem;
+}
+
+.tome-hero__title {
+  font-family: var(--ff-font-display);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5vw + 0.5rem, 4rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 0.6rem;
+  background: linear-gradient(
+    180deg,
+    #FFF6E0 0%,
+    var(--ff-parchment) 40%,
+    var(--ff-gold) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 4px 36px rgba(212, 168, 87, 0.22);
+}
+
+.tome-hero__subtitle {
+  font-family: var(--ff-font-body);
+  font-style: italic;
+  font-size: clamp(1.05rem, 1vw + 0.85rem, 1.3rem);
+  color: var(--ff-parchment-dim);
+  max-width: 42rem;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+:root[data-theme='light'] .tome-hero {
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(46, 95, 143, 0.12) 0%,
+      transparent 60%
+    ),
+    linear-gradient(180deg, #F8EFD8, #F2E6C9);
+  border-color: rgba(107, 74, 18, 0.28);
+}
+
+:root[data-theme='light'] .tome-hero__title {
+  background: linear-gradient(180deg, #1F1832 0%, #6B4A12 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+:root[data-theme='light'] .tome-hero__subtitle {
+  color: #4A3D5A;
+}
+
+/* Divisor ornamental reutilizável */
+.tome-divider {
+  display: block;
+  margin: 3rem auto;
+  height: 32px;
+  width: 100%;
+  max-width: 360px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 32' fill='none'><path d='M0 16 H140' stroke='%23D4A857' stroke-width='0.7' opacity='0.6'/><path d='M220 16 H360' stroke='%23D4A857' stroke-width='0.7' opacity='0.6'/><g transform='translate(180 16)'><path d='M-30 0 L-22 -6 M-30 0 L-22 6 M30 0 L22 -6 M30 0 L22 6' stroke='%23D4A857' stroke-width='0.7' stroke-linecap='round'/><circle cx='0' cy='0' r='6' fill='none' stroke='%23D4A857' stroke-width='0.9'/><circle cx='0' cy='0' r='2.4' fill='%23D4A857'/><circle cx='-14' cy='0' r='1.4' fill='%23D4A857' opacity='0.7'/><circle cx='14' cy='0' r='1.4' fill='%23D4A857' opacity='0.7'/></g></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.85;
+}
+
+/* "Page title" customizado */
+.tome-page-title {
+  font-family: var(--ff-font-display);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  position: relative;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.tome-page-title::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 1px;
+  margin-top: 0.7rem;
+  background: linear-gradient(90deg, var(--ff-gold), transparent);
+}
+
+/* Scrollbar ornamentada */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ff-night);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--ff-aether-deep), var(--ff-violet));
+  border-radius: 6px;
+  border: 2px solid var(--ff-night);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--ff-aether), var(--ff-gold));
+}
+
+/* Seleção de texto */
+::selection {
+  background: rgba(212, 168, 87, 0.35);
+  color: var(--ff-parchment);
+}
+
+:root[data-theme='light'] ::selection {
+  background: rgba(46, 95, 143, 0.25);
+  color: #1F1832;
+}
+
+/* Footer */
+.sl-flex.meta {
+  font-family: var(--ff-font-body);
+  font-style: italic;
+  color: var(--ff-parchment-mute);
+}
+
+footer .sl-container {
+  font-family: var(--ff-font-body);
+}
+
+/* =========================
+ *  Acessibilidade
+ * ========================= */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

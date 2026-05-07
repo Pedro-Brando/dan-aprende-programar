@@ -1,0 +1,66 @@
+---
+/**
+ * AetherCrystal — cristal hexagonal aetherial animado.
+ *
+ * Usa SVG inline para que o glow CSS funcione e respeita
+ * `prefers-reduced-motion` via custom.css.
+ */
+interface Props {
+  /** Tamanho em rem ou qualquer unidade CSS válida. */
+  size?: string;
+  /** Cor do núcleo do cristal (CSS color). */
+  color?: string;
+  /** Texto alternativo para leitor de tela. */
+  label?: string;
+}
+
+const {
+  size = '8rem',
+  color = 'var(--ff-aether)',
+  label = 'Cristal aetherial',
+} = Astro.props;
+---
+
+<span
+  class="aether-crystal"
+  style={`--size: ${size}; --core: ${color};`}
+  role="img"
+  aria-label={label}
+>
+  <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="aetherFacet" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="var(--core)" stop-opacity="0.95" />
+        <stop offset="100%" stop-color="var(--core)" stop-opacity="0.35" />
+      </linearGradient>
+      <radialGradient id="aetherCore" cx="50%" cy="40%" r="55%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+        <stop offset="55%" stop-color="var(--core)" stop-opacity="0.85" />
+        <stop offset="100%" stop-color="var(--core)" stop-opacity="0.05" />
+      </radialGradient>
+    </defs>
+
+    <g class="crystal-shell">
+      <polygon
+        points="60,8 104,34 104,86 60,112 16,86 16,34"
+        fill="none"
+        stroke="var(--ff-gold)"
+        stroke-width="0.6"
+        opacity="0.6"
+      />
+      <polygon
+        points="60,18 95,38 95,82 60,102 25,82 25,38"
+        fill="url(#aetherFacet)"
+        stroke="var(--core)"
+        stroke-width="0.8"
+        opacity="0.55"
+      />
+      <line x1="60" y1="18" x2="60" y2="102" stroke="var(--ff-gold)" stroke-width="0.4" opacity="0.45" />
+      <line x1="25" y1="38" x2="95" y2="82" stroke="var(--ff-gold)" stroke-width="0.4" opacity="0.35" />
+      <line x1="25" y1="82" x2="95" y2="38" stroke="var(--ff-gold)" stroke-width="0.4" opacity="0.35" />
+    </g>
+
+    <circle class="crystal-core" cx="60" cy="60" r="22" fill="url(#aetherCore)" />
+    <circle class="crystal-core" cx="60" cy="60" r="6" fill="#FFFFFF" opacity="0.9" />
+  </svg>
+</span>

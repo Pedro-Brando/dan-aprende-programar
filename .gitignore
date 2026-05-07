@@ -1,0 +1,32 @@
+# Dependências
+node_modules/
+
+# Build outputs
+dist/
+.astro/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Variáveis de ambiente
+.env
+.env.production
+.env.local
+
+# Editor / SO
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+*.swp
+.idea/
+
+# Bootstrap log temporário
+bootstrap.log
+npm-install.log

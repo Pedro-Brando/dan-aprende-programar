@@ -1,0 +1,24 @@
+---
+/**
+ * StubScroll — bloco "Pergaminho selado pelos Sábios".
+ * Substitui o aside `:::caution` genérico em páginas-stub.
+ */
+interface Props {
+  title?: string;
+}
+
+const {
+  title = 'Pergaminho selado pelos Sábios',
+} = Astro.props;
+---
+
+<aside class="tome-stub not-content" role="note" aria-label="Página em transcrição">
+  <p class="tome-stub__seal">Em transcrição</p>
+  <h2 class="tome-stub__title">{title}</h2>
+  <p class="tome-stub__body">
+    <slot>
+      Este capítulo ainda está sendo transcrito pelos eruditos da Biblioteca de
+      Sharlayan. Volte em breve — o conteúdo aparecerá conforme o tomo evolui.
+    </slot>
+  </p>
+</aside>
