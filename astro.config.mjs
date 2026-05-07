@@ -40,21 +40,24 @@ export default defineConfig({
           label: 'Tomo 0 - Main Story Quest',
           collapsed: false,
           items: [
-            { label: 'Como usar este tomo', slug: 'como-usar' },
             {
-              label: 'Instalando Python',
+              label: 'Como usar este tomo · A Realm Reborn',
+              slug: 'como-usar',
+            },
+            {
+              label: 'Instalando Python · Heavensward',
               slug: '0-antes-de-programar/instalando-python',
             },
             {
-              label: 'O editor (VS Code)',
+              label: 'O editor VS Code · Stormblood',
               slug: '0-antes-de-programar/editor-vscode',
             },
             {
-              label: 'Terminal básico',
+              label: 'Terminal básico · Shadowbringers',
               slug: '0-antes-de-programar/terminal-basico',
             },
             {
-              label: 'Git e GitHub',
+              label: 'Git e GitHub · Endwalker',
               slug: '0-antes-de-programar/git-github',
             },
           ],
