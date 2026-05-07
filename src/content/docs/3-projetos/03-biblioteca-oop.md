@@ -1,6 +1,6 @@
 ---
-title: Trial 03 — Biblioteca de Sharlayan
-description: Sistema de biblioteca em OOP — livros, usuários, empréstimos. Primeiro projeto que justifica usar classes.
+title: Trial 03 - Biblioteca de Sharlayan
+description: Sistema de biblioteca em OOP - livros, usuários, empréstimos. Primeiro projeto que justifica usar classes.
 ---
 
 <aside class="tome-stub not-content" role="note" aria-label="Página em transcrição">
@@ -8,7 +8,7 @@ description: Sistema de biblioteca em OOP — livros, usuários, empréstimos. P
   <h2 class="tome-stub__title">Pergaminho selado pelos Sábios</h2>
   <p class="tome-stub__body">
     Este capítulo ainda está sendo transcrito pelos eruditos da Biblioteca de
-    Sharlayan. Volte em breve — o conteúdo aparecerá conforme o tomo evolui.
+    Sharlayan. Volte em breve - o conteúdo aparecerá conforme o tomo evolui.
   </p>
 </aside>
 

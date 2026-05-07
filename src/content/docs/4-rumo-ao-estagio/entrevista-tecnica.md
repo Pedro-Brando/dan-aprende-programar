@@ -1,6 +1,6 @@
 ---
 title: Entrevista técnica
-description: O que cai em entrevista técnica de estágio — FizzBuzz, lógica básica, leitura de código e como pensar em voz alta.
+description: O que cai em entrevista técnica de estágio - FizzBuzz, lógica básica, leitura de código e como pensar em voz alta.
 ---
 
 <aside class="tome-stub not-content" role="note" aria-label="Página em transcrição">
@@ -8,7 +8,7 @@ description: O que cai em entrevista técnica de estágio — FizzBuzz, lógica 
   <h2 class="tome-stub__title">Pergaminho selado pelos Sábios</h2>
   <p class="tome-stub__body">
     Este capítulo ainda está sendo transcrito pelos eruditos da Biblioteca de
-    Sharlayan. Volte em breve — o conteúdo aparecerá conforme o tomo evolui.
+    Sharlayan. Volte em breve - o conteúdo aparecerá conforme o tomo evolui.
   </p>
 </aside>
 

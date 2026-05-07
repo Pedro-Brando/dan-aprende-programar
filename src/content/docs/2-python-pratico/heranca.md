@@ -1,6 +1,6 @@
 ---
 title: Herança
-description: Reaproveitar comportamento entre classes — herança, override e por que composição costuma ser melhor.
+description: Reaproveitar comportamento entre classes - herança, override e por que composição costuma ser melhor.
 ---
 
 <aside class="tome-stub not-content" role="note" aria-label="Página em transcrição">
@@ -8,7 +8,7 @@ description: Reaproveitar comportamento entre classes — herança, override e p
   <h2 class="tome-stub__title">Pergaminho selado pelos Sábios</h2>
   <p class="tome-stub__body">
     Este capítulo ainda está sendo transcrito pelos eruditos da Biblioteca de
-    Sharlayan. Volte em breve — o conteúdo aparecerá conforme o tomo evolui.
+    Sharlayan. Volte em breve - o conteúdo aparecerá conforme o tomo evolui.
   </p>
 </aside>
 

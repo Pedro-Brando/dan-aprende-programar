@@ -1,5 +1,5 @@
 /* =====================================================================
- * Tomo de Sharlayan — folha de estilos aetherial
+ * Tomo de Sharlayan - folha de estilos aetherial
  * ---------------------------------------------------------------------
  * Identidade visual high fantasy com referências a Final Fantasy XIV.
  * Sobrescreve as variáveis do Starlight e adiciona ornamentos próprios.
@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Unicase:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 /* =========================
- *  Paleta — Reino Aetherial
+ *  Paleta - Reino Aetherial
  * ========================= */
 :root {
   /* Fundos */
@@ -267,7 +267,7 @@ body::after {
 }
 
 /* =========================
- *  Sidebar — cristal ativo
+ *  Sidebar - cristal ativo
  * ========================= */
 .sidebar-content {
   font-family: var(--ff-font-body);
@@ -339,7 +339,7 @@ body::after {
 }
 
 /* =========================
- *  Markdown — links e prosa
+ *  Markdown - links e prosa
  * ========================= */
 .sl-markdown-content {
   font-size: 1.075rem;
@@ -448,7 +448,7 @@ body::after {
  *  Componentes próprios
  * ========================= */
 
-/* StubScroll — selo "Pergaminho selado" */
+/* StubScroll - selo "Pergaminho selado" */
 .tome-stub {
   --stub-bg: linear-gradient(
     180deg,
@@ -512,7 +512,7 @@ body::after {
   color: #4A3D5A;
 }
 
-/* TomeCard — cartão de tomo com cor de cristal */
+/* TomeCard - cartão de tomo com cor de cristal */
 .tome-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -630,7 +630,7 @@ body::after {
   color: #4A3D5A;
 }
 
-/* AetherCrystal — cristal hexagonal animado */
+/* AetherCrystal - cristal hexagonal animado */
 .aether-crystal {
   --size: 7rem;
   --core: var(--ff-aether);

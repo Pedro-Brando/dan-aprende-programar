@@ -1,6 +1,6 @@
 ---
-title: Trial 02 — Lista de Recados
-description: Lista de tarefas que persiste em arquivo JSON — adicionar, listar, completar, remover. Sobrevive ao fechar o programa.
+title: Trial 02 - Lista de Recados
+description: Lista de tarefas que persiste em arquivo JSON - adicionar, listar, completar, remover. Sobrevive ao fechar o programa.
 ---
 
 <aside class="tome-stub not-content" role="note" aria-label="Página em transcrição">
@@ -8,7 +8,7 @@ description: Lista de tarefas que persiste em arquivo JSON — adicionar, listar
   <h2 class="tome-stub__title">Pergaminho selado pelos Sábios</h2>
   <p class="tome-stub__body">
     Este capítulo ainda está sendo transcrito pelos eruditos da Biblioteca de
-    Sharlayan. Volte em breve — o conteúdo aparecerá conforme o tomo evolui.
+    Sharlayan. Volte em breve - o conteúdo aparecerá conforme o tomo evolui.
   </p>
 </aside>
 
@@ -26,4 +26,4 @@ Um app CLI de lista de tarefas: adicionar, listar pendentes/concluídas, marcar 
 
 ## Entrega esperada
 
-Repositório com README mostrando comandos e um GIF/vídeo do app rodando — começa a ficar bonito de mostrar em entrevista.
+Repositório com README mostrando comandos e um GIF/vídeo do app rodando - começa a ficar bonito de mostrar em entrevista.

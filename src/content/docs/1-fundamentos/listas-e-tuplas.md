@@ -1,6 +1,6 @@
 ---
 title: Listas e tuplas
-description: As coleções mais usadas em Python — listas mutáveis e tuplas imutáveis, com indexação, slicing e métodos essenciais.
+description: As coleções mais usadas em Python - listas mutáveis e tuplas imutáveis, com indexação, slicing e métodos essenciais.
 ---
 
 <aside class="tome-stub not-content" role="note" aria-label="Página em transcrição">
@@ -8,7 +8,7 @@ description: As coleções mais usadas em Python — listas mutáveis e tuplas i
   <h2 class="tome-stub__title">Pergaminho selado pelos Sábios</h2>
   <p class="tome-stub__body">
     Este capítulo ainda está sendo transcrito pelos eruditos da Biblioteca de
-    Sharlayan. Volte em breve — o conteúdo aparecerá conforme o tomo evolui.
+    Sharlayan. Volte em breve - o conteúdo aparecerá conforme o tomo evolui.
   </p>
 </aside>
 

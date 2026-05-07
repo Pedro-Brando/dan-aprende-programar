@@ -1,6 +1,6 @@
 ---
 title: JSON
-description: O formato mais usado para trocar dados entre sistemas — ler, escrever e manipular com o módulo json.
+description: O formato mais usado para trocar dados entre sistemas - ler, escrever e manipular com o módulo json.
 ---
 
 <aside class="tome-stub not-content" role="note" aria-label="Página em transcrição">
@@ -8,7 +8,7 @@ description: O formato mais usado para trocar dados entre sistemas — ler, escr
   <h2 class="tome-stub__title">Pergaminho selado pelos Sábios</h2>
   <p class="tome-stub__body">
     Este capítulo ainda está sendo transcrito pelos eruditos da Biblioteca de
-    Sharlayan. Volte em breve — o conteúdo aparecerá conforme o tomo evolui.
+    Sharlayan. Volte em breve - o conteúdo aparecerá conforme o tomo evolui.
   </p>
 </aside>
 

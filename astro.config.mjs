@@ -3,10 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import mdx from '@astrojs/mdx';
 
-// IMPORTANTE: ajustar `site` e `base` quando o repositório for criado no GitHub.
-// Hoje estão como placeholder — basta trocar `<seu-usuario>` pelo username real
-// e o `base` pelo nome exato do repositório (default: `dan-aprende-programar`).
-const SITE = 'https://example.github.io';
+const SITE = 'https://pedro-brando.github.io';
 const BASE = '/dan-aprende-programar';
 
 export default defineConfig({
@@ -17,7 +14,7 @@ export default defineConfig({
     starlight({
       title: 'Dan Aprende a Programar',
       description:
-        'Uma jornada do nível 1 ao primeiro estágio em Python — escrita em forma de tomo aetherial.',
+        'Uma jornada do nível 1 ao primeiro estágio em Python - escrita em forma de tomo aetherial.',
       defaultLocale: 'root',
       locales: {
         root: { label: 'Português', lang: 'pt-BR' },
@@ -29,18 +26,18 @@ export default defineConfig({
       favicon: '/favicon.svg',
       customCss: ['./src/styles/custom.css'],
       social: {
-        github: 'https://github.com/example/dan-aprende-programar',
+        github: 'https://github.com/Pedro-Brando/dan-aprende-programar',
       },
       editLink: {
         baseUrl:
-          'https://github.com/example/dan-aprende-programar/edit/main/',
+          'https://github.com/Pedro-Brando/dan-aprende-programar/edit/main/',
       },
       lastUpdated: true,
       pagination: true,
       tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
       sidebar: [
         {
-          label: 'Tomo 0 — Diário do Aprendiz',
+          label: 'Tomo 0 - Main Story Quest',
           collapsed: false,
           items: [
             { label: 'Como usar este tomo', slug: 'como-usar' },
@@ -63,7 +60,7 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Tomo I — Cristais Fundamentais',
+          label: 'Tomo I - Sua primeira extreme',
           collapsed: false,
           items: [
             { label: 'Olá, mundo', slug: '1-fundamentos/ola-mundo' },
@@ -95,7 +92,7 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Tomo II — Artes Avançadas',
+          label: 'Tomo II - Savage',
           collapsed: true,
           items: [
             {
@@ -128,33 +125,33 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Tomo III — Provas do Aventureiro',
+          label: 'Tomo III - Farm de BIS',
           collapsed: true,
           items: [
             {
-              label: 'Trial 01 — Calculadora de Eorzea',
+              label: 'Trial 01 - Calculadora de Eorzea',
               slug: '3-projetos/01-calculadora-cli',
             },
             {
-              label: 'Trial 02 — Lista de Recados',
+              label: 'Trial 02 - Lista de Recados',
               slug: '3-projetos/02-todo-list',
             },
             {
-              label: 'Trial 03 — Biblioteca de Sharlayan',
+              label: 'Trial 03 - Biblioteca de Sharlayan',
               slug: '3-projetos/03-biblioteca-oop',
             },
             {
-              label: 'Trial 04 — Echo de Dados',
+              label: 'Trial 04 - Echo de Dados',
               slug: '3-projetos/04-scraper-analise',
             },
             {
-              label: 'Trial 05 — API do Aventureiro',
+              label: 'Trial 05 - API do Aventureiro',
               slug: '3-projetos/05-api-fastapi',
             },
           ],
         },
         {
-          label: 'Tomo IV — A Marca da Guilda',
+          label: 'Tomo IV - Ultimate cleanup',
           collapsed: true,
           items: [
             {

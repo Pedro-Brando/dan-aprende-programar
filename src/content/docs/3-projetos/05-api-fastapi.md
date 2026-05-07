@@ -1,6 +1,6 @@
 ---
-title: Trial 05 — API do Aventureiro
-description: Construir uma API REST com FastAPI — o projeto que prova que o aventureiro está pronto para o estágio.
+title: Trial 05 - API do Aventureiro
+description: Construir uma API REST com FastAPI - o projeto que prova que o aventureiro está pronto para o estágio.
 ---
 
 <aside class="tome-stub not-content" role="note" aria-label="Página em transcrição">
@@ -8,7 +8,7 @@ description: Construir uma API REST com FastAPI — o projeto que prova que o av
   <h2 class="tome-stub__title">Pergaminho selado pelos Sábios</h2>
   <p class="tome-stub__body">
     Este capítulo ainda está sendo transcrito pelos eruditos da Biblioteca de
-    Sharlayan. Volte em breve — o conteúdo aparecerá conforme o tomo evolui.
+    Sharlayan. Volte em breve - o conteúdo aparecerá conforme o tomo evolui.
   </p>
 </aside>
 
@@ -22,7 +22,7 @@ Uma API REST com endpoints CRUD (criar/ler/atualizar/deletar) usando FastAPI, pe
 - Pydantic: schemas de request/response com validação
 - SQLite via SQLAlchemy ou queries diretas
 - Tratamento de erros com `HTTPException`
-- Documentação automática (Swagger UI) — chamar atenção em entrevista
+- Documentação automática (Swagger UI) - chamar atenção em entrevista
 - Testes da API com `pytest` + `TestClient`
 
 ## Entrega esperada

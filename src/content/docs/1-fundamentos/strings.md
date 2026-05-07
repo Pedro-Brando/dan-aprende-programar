@@ -1,6 +1,6 @@
 ---
 title: Strings
-description: Texto em profundidade — métodos, formatação, slicing e encoding sem dor.
+description: Texto em profundidade - métodos, formatação, slicing e encoding sem dor.
 ---
 
 <aside class="tome-stub not-content" role="note" aria-label="Página em transcrição">
@@ -8,7 +8,7 @@ description: Texto em profundidade — métodos, formatação, slicing e encodin
   <h2 class="tome-stub__title">Pergaminho selado pelos Sábios</h2>
   <p class="tome-stub__body">
     Este capítulo ainda está sendo transcrito pelos eruditos da Biblioteca de
-    Sharlayan. Volte em breve — o conteúdo aparecerá conforme o tomo evolui.
+    Sharlayan. Volte em breve - o conteúdo aparecerá conforme o tomo evolui.
   </p>
 </aside>
 
@@ -18,4 +18,4 @@ description: Texto em profundidade — métodos, formatação, slicing e encodin
 - Slicing aplicado a strings (igual a listas)
 - Quando usar f-string, `.format()` e `%`
 - Strings multi-linha com aspas triplas
-- Noção rápida de encoding (UTF-8) — por que acentos às vezes quebram
+- Noção rápida de encoding (UTF-8) - por que acentos às vezes quebram

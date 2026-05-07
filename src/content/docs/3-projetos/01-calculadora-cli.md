@@ -1,6 +1,6 @@
 ---
-title: Trial 01 — Calculadora de Eorzea
-description: Primeiro mini-projeto — uma calculadora de linha de comando que junta tudo do Tomo I em um único programa.
+title: Trial 01 - Calculadora de Eorzea
+description: Primeiro mini-projeto - uma calculadora de linha de comando que junta tudo do Tomo I em um único programa.
 ---
 
 <aside class="tome-stub not-content" role="note" aria-label="Página em transcrição">
@@ -8,7 +8,7 @@ description: Primeiro mini-projeto — uma calculadora de linha de comando que j
   <h2 class="tome-stub__title">Pergaminho selado pelos Sábios</h2>
   <p class="tome-stub__body">
     Este capítulo ainda está sendo transcrito pelos eruditos da Biblioteca de
-    Sharlayan. Volte em breve — o conteúdo aparecerá conforme o tomo evolui.
+    Sharlayan. Volte em breve - o conteúdo aparecerá conforme o tomo evolui.
   </p>
 </aside>
 
@@ -26,4 +26,4 @@ Uma calculadora de terminal que aceita expressões como `12 + 7` e devolve o res
 
 ## Entrega esperada
 
-Um repositório no GitHub com o código + um README explicando como rodar — primeiro item do portfólio do aventureiro.
+Um repositório no GitHub com o código + um README explicando como rodar - primeiro item do portfólio do aventureiro.

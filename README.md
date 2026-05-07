@@ -1,6 +1,6 @@
 # Dan Aprende a Programar
 
-> Tomo de Sharlayan — Edição do Aventureiro
+> Tomo de Sharlayan - Edição do Aventureiro
 >
 > Uma jornada do nível 1 ao primeiro estágio em Python.
 
@@ -12,17 +12,17 @@ Final Fantasy XIV (cristais aetheriais, tomos, trials).
 
 ## Para o aventureiro (você, Dan)
 
-1. Abra o site publicado (link estará aqui assim que o repositório for ao ar no GitHub Pages).
-2. Comece por **Tomo 0 → Diário do Aprendiz** se você nunca programou.
+1. Site publicado: <https://pedro-brando.github.io/dan-aprende-programar/>
+2. Comece por **Tomo 0 (Main Story Quest)** se você nunca programou.
 3. Faça **um capítulo por dia** com tudo que estiver pronto, no seu ritmo.
-4. Cada **Trial** (mini-projeto) vira um repositório no seu GitHub — esse é o portfólio
+4. Cada **Trial** (mini-projeto) vira um repositório no seu GitHub, e esse é o portfólio
    que você vai mostrar nas vagas de estágio.
 5. Travou? Anota a dúvida e me chama (ou abre uma issue neste repo).
 
 ### Ler offline
 
 ```powershell
-git clone https://github.com/<seu-usuario>/dan-aprende-programar.git
+git clone https://github.com/Pedro-Brando/dan-aprende-programar.git
 cd dan-aprende-programar
 npm install
 npm run dev
@@ -74,27 +74,12 @@ src/
 2. Adicione a entrada na `sidebar` em `astro.config.mjs`.
 3. Substitua o `<aside class="tome-stub">` pelo conteúdo real quando estiver pronto.
 
-### Antes do primeiro deploy
+### Deploy
 
-Edite `astro.config.mjs` e troque os placeholders:
+Repositório: <https://github.com/Pedro-Brando/dan-aprende-programar>
 
-```js
-const SITE = 'https://<seu-usuario>.github.io';
-const BASE = '/dan-aprende-programar';
-```
-
-E em `social` + `editLink`, substitua `example` pelo seu username.
-
-### Publicar no GitHub Pages
-
-1. Crie um repositório público chamado `dan-aprende-programar` no GitHub.
-2. Conecte o local:
-   ```powershell
-   git remote add origin https://github.com/<seu-usuario>/dan-aprende-programar.git
-   git push -u origin main
-   ```
-3. Em **Settings → Pages**, defina **Source: GitHub Actions**.
-4. O workflow `.github/workflows/deploy.yml` cuida do resto a cada push em `main`.
+GitHub Pages está configurado em **Settings → Pages → Source: GitHub Actions**
+e o workflow `.github/workflows/deploy.yml` publica automaticamente a cada push em `main`.
 
 ---
 
@@ -102,10 +87,10 @@ E em `social` + `editLink`, substitua `example` pelo seu username.
 
 - Paleta: void/night/parchment/aether/gold/crystal-violet
 - Fontes: Cinzel (display) + EB Garamond (body) + JetBrains Mono (code)
-- Stub "Em construção" exibido como **Pergaminho selado pelos Sábios — em transcrição**
+- Stub "Em construção" exibido como **Pergaminho selado pelos Sábios - em transcrição**
 - Capítulos mantêm título técnico claro (ex: `Variáveis`, `Loops`); só os agrupadores
-  ("Tomo I — Cristais Fundamentais") e a landing usam linguagem de fantasia
-- Zero asset proprietário da Square Enix — referências são apenas evocativas
+  ("Tomo I - Sua primeira extreme") e a landing usam linguagem de fantasia
+- Zero asset proprietário da Square Enix - referências são apenas evocativas
 
 ---
 
@@ -114,7 +99,7 @@ E em `social` + `editLink`, substitua `example` pelo seu username.
 Tudo está como **stub** nesta primeira versão. A ordem sugerida para preencher
 o conteúdo real, sessão após sessão:
 
-1. `0-antes-de-programar/instalando-python.md` — Dan precisa do Python rodando
+1. `0-antes-de-programar/instalando-python.md` - Dan precisa do Python rodando
 2. `0-antes-de-programar/editor-vscode.md` + `terminal-basico.md`
 3. `1-fundamentos/ola-mundo.md` → `variaveis.md` → `tipos-de-dados.md` em sequência
 4. Trilha de fundamentos completa
@@ -123,4 +108,4 @@ o conteúdo real, sessão após sessão:
 
 ---
 
-Forjado em Sharlayan — para um aventureiro.
+Forjado em Sharlayan - para um aventureiro.

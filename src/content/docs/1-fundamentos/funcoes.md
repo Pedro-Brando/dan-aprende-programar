@@ -1,6 +1,6 @@
 ---
 title: Funções
-description: Empacotar lógica em blocos reutilizáveis — o passo que separa quem copia código de quem escreve código.
+description: Empacotar lógica em blocos reutilizáveis - o passo que separa quem copia código de quem escreve código.
 ---
 
 <aside class="tome-stub not-content" role="note" aria-label="Página em transcrição">
@@ -8,7 +8,7 @@ description: Empacotar lógica em blocos reutilizáveis — o passo que separa q
   <h2 class="tome-stub__title">Pergaminho selado pelos Sábios</h2>
   <p class="tome-stub__body">
     Este capítulo ainda está sendo transcrito pelos eruditos da Biblioteca de
-    Sharlayan. Volte em breve — o conteúdo aparecerá conforme o tomo evolui.
+    Sharlayan. Volte em breve - o conteúdo aparecerá conforme o tomo evolui.
   </p>
 </aside>
 

@@ -1,6 +1,6 @@
 ---
 title: SQLite
-description: Banco de dados local sem instalação extra — embutido no Python e o melhor jeito de aprender SQL na prática.
+description: Banco de dados local sem instalação extra - embutido no Python e o melhor jeito de aprender SQL na prática.
 ---
 
 <aside class="tome-stub not-content" role="note" aria-label="Página em transcrição">
@@ -8,7 +8,7 @@ description: Banco de dados local sem instalação extra — embutido no Python 
   <h2 class="tome-stub__title">Pergaminho selado pelos Sábios</h2>
   <p class="tome-stub__body">
     Este capítulo ainda está sendo transcrito pelos eruditos da Biblioteca de
-    Sharlayan. Volte em breve — o conteúdo aparecerá conforme o tomo evolui.
+    Sharlayan. Volte em breve - o conteúdo aparecerá conforme o tomo evolui.
   </p>
 </aside>
 
