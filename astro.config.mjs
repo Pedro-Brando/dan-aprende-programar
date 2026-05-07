@@ -12,9 +12,9 @@ export default defineConfig({
   trailingSlash: 'ignore',
   integrations: [
     starlight({
-      title: 'Dan Aprende a Programar',
+      title: 'Pedro Brando apresenta:',
       description:
-        'Uma jornada do nível 1 ao primeiro estágio em Python - escrita em forma de tomo aetherial.',
+        'Dan Aprende a Programar (Ultimate). Uma jornada do nível 1 ao primeiro estágio em Python, escrita em forma de tomo aetherial.',
       defaultLocale: 'root',
       locales: {
         root: { label: 'Português', lang: 'pt-BR' },
