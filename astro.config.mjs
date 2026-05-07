@@ -12,9 +12,9 @@ export default defineConfig({
   trailingSlash: 'ignore',
   integrations: [
     starlight({
-      title: 'Pedro Brando apresenta:',
+      title: 'Dan Aprende a Programar (Ultimate)',
       description:
-        'Dan Aprende a Programar (Ultimate). Uma jornada do nível 1 ao primeiro estágio em Python, escrita em forma de tomo aetherial.',
+        'Uma jornada do nível 1 ao primeiro estágio em Python, escrita em forma de tomo aetherial.',
       defaultLocale: 'root',
       locales: {
         root: { label: 'Português', lang: 'pt-BR' },
@@ -34,7 +34,7 @@ export default defineConfig({
       },
       lastUpdated: true,
       pagination: true,
-      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
+      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 },
       sidebar: [
         {
           label: 'Tomo 0 - Main Story Quest',

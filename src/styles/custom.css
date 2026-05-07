@@ -868,6 +868,84 @@ footer .sl-container {
 }
 
 /* =========================
+ *  Landing (splash) - reduz o h1 da pagina para virar intro
+ *  Usa :not([data-pagefind-body]) que so falha no main da landing
+ *  porque ela tem pagefind: false no frontmatter.
+ * ========================= */
+main:not([data-pagefind-body]) > .content-panel:first-of-type h1#_top {
+  font-family: var(--ff-font-decor);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  text-align: center;
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: var(--ff-gold);
+  text-shadow: none;
+  margin: 0.5rem 0 0;
+  opacity: 0.78;
+}
+
+main:not([data-pagefind-body]) > .content-panel:first-of-type {
+  border-bottom: 0;
+  padding-block-end: 0;
+}
+
+main:not([data-pagefind-body]) > .content-panel:first-of-type + .content-panel {
+  border-top: 0;
+  padding-block-start: 0.5rem;
+}
+
+:root[data-theme='light']
+  main:not([data-pagefind-body])
+  > .content-panel:first-of-type
+  h1#_top {
+  color: #6B4A12;
+}
+
+/* =========================
+ *  TOC ("Nesta página") - mais compacto
+ * ========================= */
+@media (min-width: 72rem) {
+  .right-sidebar {
+    --sl-sidebar-width: 13rem;
+  }
+}
+
+starlight-toc {
+  font-size: 0.82rem;
+}
+
+starlight-toc nav > h2 {
+  font-family: var(--ff-font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ff-gold);
+  margin-bottom: 0.5rem;
+}
+
+:root[data-theme='light'] starlight-toc nav > h2 {
+  color: #6B4A12;
+}
+
+starlight-toc a {
+  padding-block: 0.22rem;
+  line-height: 1.35;
+  border-inline-start-width: 1px;
+}
+
+starlight-toc ul ul a {
+  padding-inline-start: 1rem;
+}
+
+starlight-toc ul ul ul a {
+  padding-inline-start: 1.5rem;
+}
+
+/* =========================
  *  Acessibilidade
  * ========================= */
 @media (prefers-reduced-motion: reduce) {
