@@ -66,32 +66,62 @@ export default defineConfig({
           label: 'Tomo I - Sua primeira extreme',
           collapsed: false,
           items: [
-            { label: 'Olá, mundo', slug: '1-fundamentos/ola-mundo' },
-            { label: 'Variáveis', slug: '1-fundamentos/variaveis' },
             {
-              label: 'Tipos de dados',
+              label: 'Olá, mundo · Aetheryte Attunement',
+              slug: '1-fundamentos/ola-mundo',
+            },
+            {
+              label: 'Variáveis · Inventory slot',
+              slug: '1-fundamentos/variaveis',
+            },
+            {
+              label: 'Tipos de dados · Aether types',
               slug: '1-fundamentos/tipos-de-dados',
             },
-            { label: 'Operadores', slug: '1-fundamentos/operadores' },
             {
-              label: 'Entrada e saída',
+              label: 'Operadores · Combo system',
+              slug: '1-fundamentos/operadores',
+            },
+            {
+              label: 'Entrada e saída · Chat channels',
               slug: '1-fundamentos/entrada-saida',
             },
-            { label: 'Condicionais', slug: '1-fundamentos/condicionais' },
-            { label: 'Loops', slug: '1-fundamentos/loops' },
             {
-              label: 'Listas e tuplas',
+              label: 'Condicionais · Duty Roulette',
+              slug: '1-fundamentos/condicionais',
+            },
+            {
+              label: 'Loops · Daily reset',
+              slug: '1-fundamentos/loops',
+            },
+            {
+              label: 'Listas e tuplas · Hotbar',
               slug: '1-fundamentos/listas-e-tuplas',
             },
-            { label: 'Dicionários', slug: '1-fundamentos/dicionarios' },
-            { label: 'Funções', slug: '1-fundamentos/funcoes' },
-            { label: 'Strings', slug: '1-fundamentos/strings' },
             {
-              label: 'Erros e exceções',
+              label: 'Dicionários · Hunting Log',
+              slug: '1-fundamentos/dicionarios',
+            },
+            {
+              label: 'Funções · Macro',
+              slug: '1-fundamentos/funcoes',
+            },
+            {
+              label: 'Strings · /yell',
+              slug: '1-fundamentos/strings',
+            },
+            {
+              label: 'Erros e exceções · Wipe e raise',
               slug: '1-fundamentos/erros-excecoes',
             },
-            { label: 'Arquivos', slug: '1-fundamentos/arquivos' },
-            { label: 'Módulos', slug: '1-fundamentos/modulos' },
+            {
+              label: 'Arquivos · Character save',
+              slug: '1-fundamentos/arquivos',
+            },
+            {
+              label: 'Módulos · Job actions',
+              slug: '1-fundamentos/modulos',
+            },
           ],
         },
         {
